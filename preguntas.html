@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Foro de Preguntas</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Número de columnas y tamaño */
+      grid-gap: 20px;
+      /* Espacio entre las columnas */
+    }
+  </style>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #d8d1ef;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content li {
+      padding: 12px 16px;
+      cursor: pointer;
+    }
+
+    .dropdown-content li:hover {
+      background-color: #d8d1ef;
+    }
+  </style>
+  <style>
+    footer {
+      background-color: #d8d1ef;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-color: #d8d1ef;">
+  <header>
+    <h1>Foro de Preguntas</h1>
+  </header>
+  <style>
+    body {
+
+      
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #42a2bc;
+      color: #fafafa;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    #question-form {
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    #questions {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .question {
+      margin-bottom: 100px;
+      padding: 50px;
+      border: 1px solid #579e5f;
+    }
+  </style>
+  <div class="dropdown">
+    <button class="botonUno">Mostrar opciones</button>
+    <ul class="dropdown-content">
+      <li>Perfil</li>
+      <li>Ajustes</li>
+      <li>Sobre nosotros</li>
+    </ul>
+  </div>
+  <style>
+    .botonUno {
+      margin: 10px 10px;
+      background: cadetblue;
+      font-size: 16px;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+
+  <div class="container">
+    <div>
+      <section id="question-list">
+        <h2>Hilo activo numero 1</h2>
+        <ul id="questions">
+          <!-- Aquí se mostrarán las preguntas -->
+        </ul>
+        <h4>¿Mejores metodos de estudio para programadores?</h4>
+        <h2>Hilo activo numero 2</h2>
+        <ul id="questions">
+          <!--Aquí se mostraran tus preguntas-->
+        </ul>
+        <h4>¿Por que candidato va a votar?</h4>
+        <h2>Algunos temas de interes</h2>
+        <ul id="Temas">
+          <!--Aquí se mostraran tus temas-->
+        </ul>
+        <h4> Paro de taxitas 2023</h4>
+    </div>
+
+    <div>
+      <section id="question-form">
+        <h2>Realiza tu pregunta!</h2>
+        <form id="question-form">
+          <label for="question">Descripcion de la pregunta:</label>
+          <textarea id="question" rows="4"></textarea>
+          <button type="submit" class="submit">Enviar</button>
+          <div>No hay comentarios que mostrar...</div>
+        </form>
+      </section>
+      <div>Subforos</div>
+      <div>¿Como dormir mejor en etapa de examenes?</div>
+      <div>¿Que es mejor, Backend o Frontend?</div>
+      <div>¿Como se consigue trabajo remoto por linkedIn?</div>
+      <section id="question-form">
+        <label for="question">Introduce aqui tu comentario...:</label>
+        <textarea id="question" rows="2"></textarea>
+        <button type="submit" class="submit">Enviar</button>
+      </section>
+    </div>
+
+    <style>
+    .submit {
+      background: cadetblue;
+      font-size: 16px;
+      color: white;
+      border-radius: 5px;
+    }</style>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca de.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <p>Derechos de autor &copy; 2023 - foroweb</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

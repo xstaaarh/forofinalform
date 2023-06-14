@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio-Foro de pregunas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container label,
+        .form-container input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenido!</h1>
+
+    <script src="script.js"></script>
+    <div class="form-container">
+        <h2>Iniciar sesión</h2>
+        <form>
+            <label for="text">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario" required>
+
+            <button type="button" onclick="redirigir(username)">Iniciar sesión</button>
+        </form>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="acerca de.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Derechos de autor &copy; 2023 - ForoWeb</p>
+    </footer>
+</body>
+
+<script>
+
+function redirigir(username) {
+
+    if (!username == "") {
+        window.location.href = "preguntas.html";
+
+    } 
+} 
+
+
+
+
+</script>
+
+</html>
